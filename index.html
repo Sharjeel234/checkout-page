@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="./Images/devchallenges.png" type="image/png">
+  <title>Checkout Page | devChallenges.io</title>
+  <link rel="stylesheet" href="./CSS/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,500&display=swap"
+    rel="stylesheet">
+  <!-- Icons -->
+  <!-- <link href="https://fonts.googleapis.com/icon?family=Material+Icons|Material+Icons+Round" rel="stylesheet"> -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+
+<body>
+  <div class="container">
+    <h1 class="title">Checkout</h1>
+
+      <!-- Cart -->
+    <div class="cart-rect">
+
+      <div class="cart">
+        <img src="./Images/photo1.png" alt="" class="cart-image">
+        <h2 class="cart-title">Vintage Backbag</h2>
+        <p class="cart-price">$54.99</p>
+        <p class="cart-strprice">$94.99</p>
+        <div class="cart-bx">
+          <span class="minus" id="minus" onclick="decrement()">-</span>
+          <span class="qt" id="qt">1</span>
+          <span class="add" id="add" onclick="increment()">+</span>
+        </div>
+      </div>
+
+      <div class="cart2">
+        <img src="./Images/photo2.png" alt="" class="cart-image">
+        <h2 class="cart-title">Levi Shoes</h2>
+        <p class="cart-price">$74.99</p>
+        <p class="cart-strprice">$124.99</p>
+        <div class="cart-bx">
+          <span class="minus" id="minus2" onclick="decrementLess()">-</span>
+          <span class="qt" id="qt2">1</span>
+          <span class="add" id="add2" onclick="incrementMore()">+</span>
+        </div>
+      </div>
+      <hr class="line">
+      <div class="ship-bx">
+        <p class="ship-title">Shipping</p>
+        <p class="ship-price">$19</p>
+      </div>
+      <hr class="line2">
+      <div class="ship-bx2">
+        <p class="ship-title">Total</p>
+        <p class="ship-price">$148.98</p>
+      </div>
+    </div>
+
+    <!-- Form -->
+
+    <form class="frm">
+      <h2 class="frm-title">Contact Information</h2>
+
+      <div class="input-wrapper">
+        <label for="email">Email</label>
+        <input type="email" id="email" class="input-email" placeholder="Enter your email..." required>
+        <span class="placeholder-image">
+          mail
+        </span>
+      </div>
+      <div class="input-wrapper">
+        <label for="phone">Phone</label>
+        <input type="tel" id="phone" class="input-phone" placeholder="Enter your phone..." required>
+        <span class="placeholder-image">
+          call
+        </span>
+      </div>
+
+      <div class="empty"></div>
+
+      <h2 class="frm-title">Shipping Information</h2>
+
+      <div class="input-wrapper">
+        <label for="name">Full Name</label>
+        <input type="text" id="name" class="input-name" placeholder="Rodney Cotton" required>
+        <span class="placeholder-image">
+          account_circle
+        </span>
+      </div>
+      <div class="input-wrapper">
+        <label for="address">Address</label>
+        <input type="text" id="address" class="input-address" placeholder="Your address..." required>
+        <span class="placeholder-image">
+          home
+        </span>
+      </div>
+      <div class="input-wrapper">
+        <label for="city">City</label>
+        <input type="text" id="city" class="input-city" placeholder="Your city..." required>
+        <span class="placeholder-image">
+          location_city
+        </span>
+      </div>
+
+      <div class="country-postl">
+        <div class="input-wrapper">
+          <label for="country">Country</label>
+          <select id="country" required>
+            <option value="" disabled selected hidden>Your Country...</option>
+            <option value="pk">Pakistan</option>
+            <option value="tur">Turkey</option>
+            <option value="chin">China</option>
+          </select>
+          <span class="placeholder-image">
+            public
+          </span>
+        </div>
+
+        <div class="input-wrapper postal">
+          <label for="postal">Postal Code</label>
+          <input type="text" id="postal" required class="input-postal" placeholder="Postal code..">
+          <span class="placeholder-image">
+            markunread_mailbox
+          </span>
+        </div>
+      </div>
+
+      <input type="checkbox" id="info" class="check" required>
+      <label for="info" class="info">
+        Save this information for next time
+      </label>
+
+      <button type="submit">Continue</button>
+
+    </form>
+
+    <footer class="attribution">
+      <p>created by <a href="https://devchallenges.io/portfolio/Sharjeel234">Sharjeel234</a> - <a href="https://devchallenges.io/">devChallenges.io</a></p>
+    </footer>
+  </div>
+
+  <script src="./JS/app.js"></script>
+</body>
+
+</html>
